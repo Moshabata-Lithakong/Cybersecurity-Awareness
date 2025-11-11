@@ -8,6 +8,34 @@
   ],
   "routes": [
     {
+      "src": "/favicon.png",
+      "dest": "/build/web/favicon.png"
+    },
+    {
+      "src": "/icons/(.*)",
+      "dest": "/build/web/icons/$1"
+    },
+    {
+      "src": "/manifest.json",
+      "dest": "/build/web/manifest.json"
+    },
+    {
+      "src": "/version.json",
+      "dest": "/build/web/version.json"
+    },
+    {
+      "src": "/main.dart.js",
+      "dest": "/build/web/main.dart.js"
+    },
+    {
+      "src": "/flutter_bootstrap.js",
+      "dest": "/build/web/flutter_bootstrap.js"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "/build/web/assets/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/build/web/index.html"
     }
